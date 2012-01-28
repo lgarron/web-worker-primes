@@ -10,7 +10,7 @@ this.addEventListener('message', function(e) {
 
 var isPrime = function(n) {
   
-  for (var i = 2; i < n; i++) {
+  for (var i = 2; i <= Math.floor(Math.sqrt(n)); i++) {
     if (n % i == 0) {
       return false;
     }
